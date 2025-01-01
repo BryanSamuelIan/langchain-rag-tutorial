@@ -112,7 +112,7 @@ e. English Score by British Council minimal score 400 (dari Universitas Ciputra)
 Program Studi MED-IC:
 a. Paper Based Test (PBT) minimal score 550 
 b. IELTS minimal score 6.0
-c.Toefl minimal score 550
+c.Toelf minimal score 550
 Jadwal Tes lengkap bisa dilihat di enrollment.ciputra.ac.id 
 
 CONTOH SOAL TES
