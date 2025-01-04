@@ -837,3 +837,8 @@ di mana:
 277,Berapa total biaya semester 1 untuk jurusan Digital Public Relations (DPR)?,Biaya semester 1 untuk jurusan Digital Public Relations (DPR) adalah Rp42.900.000, yang terdiri dari DPP Rp20.000.000, SPP Rp10.000.000, SKS Rp9.900.000, dan ORI Rp3.000.000.
 
 278,Berapa total biaya semester 2 untuk jurusan Digital Public Relations (DPR)?,Biaya semester 2 untuk jurusan Digital Public Relations (DPR) adalah Rp19.900.000, yang terdiri dari SPP Rp10.000.000 dan SKS Rp9.900.000.
+
+279,Apa itu IMT?,Jurusan Informatics (informatika)
+
+280,Apa itu ISB?,Jurusan Information system for buisness (sistem informasi)
+
