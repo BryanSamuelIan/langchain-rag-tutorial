@@ -842,3 +842,118 @@ di mana:
 
 280,Apa itu ISB?,Jurusan Information system for buisness (sistem informasi)
 
+281,Apa itu IMT?,IMT adalah Informatika (informatics), Ada 2 penjurusan yaitu IMT-AI (Informatics-Artificial Inteligence) dan IMT-FSD (Informtatics Full Stack Development)
+
+282,Apa itu ISB?,Jurusan Information system for buisness (sistem informasi)
+
+283,Apa itu UC, UC adalah singkatan Universitas Ciputra, Sebuah Univeristas Swasta yang terletak di Surabaya, Indonesia
+
+284,Siapa namamu?, Halo! Saya YUCCA, chatbot resmi pendaftaran mahasiswa baru Universitas Ciputra. Tanyakan apa saja tentang Universitas Ciputra, mulai dari program studi, fasilitas, hingga proses pendaftaran!YUCCA siap membantu dengan ramah dan penuh semangat. Jangan ragu untuk bertanya ya, karena YUCCA senang membantu Anda! 
+
+WNA adalah Warga negara asing (foreigner)
+
+Q: Apakah Universitas Ciputra menerima mahasiswa asing (foreigner)?
+A: Ya, Universitas Ciputra menerima pendaftaran dari Warga Negara Asing (WNA).
+
+Q: Apa saja langkah-langkah yang harus dilakukan untuk mendaftar sebagai WNA (foreigner)?
+A: Langkah-langkah pendaftaran untuk WNA adalah:
+
+Q: Dokumen apa saja yang diperlukan untuk pengurusan surat izin belajar sebagai WNA (foreigner)?
+A: Dokumen yang diperlukan:
+Scan paspor (berlaku minimal 24 bulan sejak tanggal perkuliahan dimulai).
+Pas foto berwarna ukuran 4×6.
+Surat keterangan kesehatan dari rumah sakit.
+Surat Jaminan Pembiayaan (dapat diunduh di https://www.ciputra.ac.id/pendaftar-wna-2025/).
+Surat Pernyataan Patuh Peraturan & Tidak Berpolitik di Indonesia (dapat diunduh di https://www.ciputra.ac.id/pendaftar-wna-2025/).
+Surat Pernyataan Tidak Bekerja (dapat diunduh di https://www.ciputra.ac.id/pendaftar-wna-2025/).
+Ijazah SMA.
+
+Q: Siapa yang mengurus surat izin belajar sebagai WNA (foreigner)?
+A: Universitas Ciputra akan membantu pengurusan surat izin belajar ke Kementerian Pendidikan, Kebudayaan, Riset, dan Teknologi (Kemendikbud).
+
+Q: Apa yang harus dilakukan setelah surat izin belajar diterbitkan sebagai WNA (foreigner)?
+A: Setelah surat izin belajar diterbitkan oleh Kemendikbud, calon mahasiswa wajib melakukan registrasi ulang di Universitas Ciputra.
+
+Q: Apakah ada biaya tambahan untuk mahasiswa asing sebagai WNA (foreigner)?
+A: Informasi mengenai biaya tambahan untuk mahasiswa asing dapat diperoleh langsung dari pihak Universitas Ciputra saat pendaftaran.
+
+Q: Bagaimana cara mendaftar secara online sebagai WNA (foreigner)?
+A: Calon mahasiswa WNA dapat mengakses informasi lengkap dan mengunduh formulir melalui laman resmi Universitas Ciputra di https://www.ciputra.ac.id/pendaftar-wna-2025/.
+
+Q: Kapan dilaksanakan Oweek 2025?
+A: Sekitaran bulan Agustus 2025
+
+Q: Apa itu Oweek?
+A: Oweek adalah singkatan dari orientation week yang merupakan program orientasi mahasiswa baru universitas ciputra
+
+Q: Di Universitas ciputra ada organisasi apa saja?
+A: Ada organisasi SC (Student Council) yang umumnya disebut BEM sebagai badan eksekutif tingkat universitas. Ada organisasi SRB  (Student Representative Board) sebagai badan legislatif tingkat universitas. Ada MD (mentor departement) sebagai organisasi mentoring tingkat universitas. Ada UKM (unit kegiatan Mahasiswa) yang membantu minat non akademis mahasiswa. Ada SU (Student Union) tiap jurusan atau program studi sebagai HIMA.
+
+Q: Di universitas ciputra ada departemen apa saja?
+A: Biro Administrasi Akademik, Biro Mahasiswa dan Alumni, Perpustakaan, Pusat Pengembangan Pendidikan dan Pembelajajaran, Lembaga Penelitian & Pengabdian Masyarakat, Penjaminan Mutu, Pusat Pengembangan Teknologi Informasi dan Komunikasi, Biro Manajemen Sumber Daya Manusia, Biro Pengelolaan Aset dan Gedung, Biro Keuangan dan Akuntansi
+
+Studnet Union adalah organisasi HIMA di tiap fakultas yang ada di UC
+List Student Union (disingkat SU di UC):
+SU IMT, SU ISB, SU FPD, SU PSY, SU FIKOM,  SU FTP, SU HTB, SU IBM, SU BMI, SU ACC, SU MED, SU INA,  SU CB, SU VCD
+
+
+Q: UC ada dimana saja?
+A: UC ada di Surabaya dan UCM ada di Makassar. Sebentar lagi UC juga akan memiliki cabang di jakarta yaitu UCJ.
+
+Q: UC ada dimana alamat mana?
+A: UC berada di CitraLand CBD Boulevard, Made, Kec. Sambikerep, Surabaya, Jawa Timur 60219
+
+Q: UC Surabaya ada dimana alamat mana?
+A: UC Surabaya berada di CitraLand CBD Boulevard, Made, Kec. Sambikerep, Surabaya, Jawa Timur 60219
+
+Q: UCM (Makassar) ada dimana alamat mana?
+A: UCM (Makassar) berada di Kawasan CitraLand City CPI, Jalan Sunset Boulevard, Kota Makassar, Sulawesi Selatan 90224
+
+Q: UCJ (Jakarta) ada dimana alamat mana?
+A: UCJ (Jakarta) berada di Jl. Lkr. Luar Barat No.101, Rw. Buaya, Kecamatan Cengkareng, Kota Jakarta Barat, Daerah Khusus Ibukota Jakarta 11740
+
+Q: Ada berapa gedung di UC?
+A: Ada 4 Gedung di UC yaitu UC 1, UC 2, UC 3, dan UC Tower.
+
+Q: Ada tempat parkir di uc?
+A: Ada tempat parkir gratis di uc tower, dan di lapangan parkir uc. Di lapangan parkir uC kamu juga dapat memparkirkan sepedamotormu. Tenang parkiran di UC semua dijaga oleh sekuriti
+
+Q: Apa saja fasilitas di UC?
+A: Ada: Gedung UC 
+,UC Walk
+,Patung UC
+,Area Sekitar UC
+,Auditorium
+,Theater UC Tower
+,Theater Lantai 7
+,Theater IBM RC Lantai 15
+,Student Lounge – Corepreneur
+,IBM Class
+,IBM International Class
+,Tax Center Accounting
+,Inkubator Corepreneur
+,Ruang Praktik
+,Ruang Diskusi
+,Library
+,Lantai 14
+,Lantai 15
+,Lantai 16
+,Lantai 17
+,Lantai 18
+,Apple Academy
+,Lab Komputer
+,Lab Resto
+,Lab Kitchen CBZ
+,Lab Beverages & Bar
+,Lab Psychology
+,Lab of Tourism
+,Studio VCD
+,Studio Interior Architecture
+,Lab Material INA
+,Lab Fabrikasi INA
+,Lab Food Technology Program
+,Lab Fakultas Kedokteran
+,Peta Disabilitas
+,Ruang Laktasi
+,Ruang Kesehatan
+,Musholla
