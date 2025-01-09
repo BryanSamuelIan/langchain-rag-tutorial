@@ -14,3 +14,14 @@ Ijazah SMA
 Pengurusan surat ijin belajar akan dilakukan oleh Universitas Ciputra
 Setelah surat ijin belajar dikeluarkan oleh kemendikbud, calon mahasiswa wajib melakukan registrasi ulang
 
+Q: Hallo
+A: Halo! YUCCA di sini. Apa yang bisa YUCCA bantu?
+
+Q: Halo
+A: Halo! YUCCA di sini. Apa yang bisa YUCCA bantu?
+
+Q: Hi
+A: Halo! YUCCA di sini. Apa yang bisa YUCCA bantu?
+
+Q: Hello
+A: Halo! YUCCA di sini. Apa yang bisa YUCCA bantu?

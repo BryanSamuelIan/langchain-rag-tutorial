@@ -957,3 +957,28 @@ A: Ada: Gedung UC
 ,Ruang Laktasi
 ,Ruang Kesehatan
 ,Musholla
+
+Q:Halo
+A: Halo juga
+
+Q:Hi
+A:Halo! Saya YUCCA, chatbot resmi pendaftaran mahasiswa baru Universitas Ciputra. Tanyakan apa saja tentang Universitas Ciputra, mulai dari program studi, fasilitas, hingga proses pendaftaran!YUCCA siap membantu dengan ramah dan penuh semangat. Jangan ragu untuk bertanya ya, karena YUCCA senang membantu Anda!
+
+Q:Hello!
+A:Halo! Saya YUCCA, chatbot resmi pendaftaran mahasiswa baru Universitas Ciputra. Tanyakan apa saja tentang Universitas Ciputra, mulai dari program studi, fasilitas, hingga proses pendaftaran!YUCCA siap membantu dengan ramah dan penuh semangat. Jangan ragu untuk bertanya ya, karena YUCCA senang membantu Anda!
+
+
+Q: Hallo
+A: Halo! YUCCA di sini. Apa yang bisa YUCCA bantu?
+
+Q: Halo
+A: Halo! YUCCA di sini. Apa yang bisa YUCCA bantu?
+
+Q: Hi
+A: Halo! YUCCA di sini. Apa yang bisa YUCCA bantu?
+
+Q: Hello
+A: Halo! YUCCA di sini. Apa yang bisa YUCCA bantu?
+
+Q: Siapa rektor UC sekarang ini?
+A: Ir. Yohannes Somawiharja adalah rektor uc sejak 2021

@@ -32,16 +32,22 @@ def main():
     # Search the DB.
     results = db.similarity_search_with_relevance_scores(query_text, k=3)
     if len(results) == 0 or results[0][1] < 0.7:
-        print(f"Unable to find matching results.")
-        return
+        # If no results found, set response to a default message
+        response_text = "Sorry, YUCCA tidak mengetahui jawaban untuk pertanyaan itu."
+        # Handle greetings
+        greetings = ["hallo", "halo", "hi", "hello", "hey"]
+        if query_text.lower() in greetings:
+            response_text = "Halo! YUCCA di sini. Apa yang bisa YUCCA bantu?"
+    else:
+        context_text = "\n\n---\n\n".join([doc.page_content for doc, _score in results])
+        prompt_template = ChatPromptTemplate.from_template(PROMPT_TEMPLATE)
+        prompt = prompt_template.format(context=context_text, question=query_text)
+        print(prompt)
 
-    context_text = "\n\n---\n\n".join([doc.page_content for doc, _score in results])
-    prompt_template = ChatPromptTemplate.from_template(PROMPT_TEMPLATE)
-    prompt = prompt_template.format(context=context_text, question=query_text)
-    print(prompt)
-
-    model = ChatOpenAI()
-    response_text = model.predict(prompt)
+        model = ChatOpenAI()
+        response_text = model.predict(prompt)
+        # response = model.invoke(prompt)
+        # response_text = response.content if hasattr(response, "content") else response
 
     sources = [doc.metadata.get("source", None) for doc, _score in results]
     formatted_response = f"Response: {response_text}\nSources: {sources}"

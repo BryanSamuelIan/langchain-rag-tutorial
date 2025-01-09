@@ -10,6 +10,7 @@ ISB == Information System for Business
 MED-RC == Kedokteran
 MED-IC == Kedokteran (English)
 DEM == Kedokteran Gigi (Dental Medicine)
+IBM == International Business Management
 IBM-RC == International Business Management - Regular Class
 IBM-IC == International Business Management - International Class
 BMI == International Business Management - International Class
@@ -91,6 +92,9 @@ A: MED-IC adalah program Kedokteran dengan pengantar bahasa Inggris di Universit
 
 Q: Apa itu DEM?
 A: DEM adalah singkatan dari Kedokteran Gigi atau Dental Medicine, program studi yang fokus pada bidang kedokteran gigi.
+
+Q: Apa itu IBM?
+A: IBM-RC adalah singkatan dari International Business Management, program manajemen bisnis di Universitas Ciputra.
 
 Q: Apa itu IBM-RC?
 A: IBM-RC adalah singkatan dari International Business Management - Regular Class, program manajemen bisnis internasional kelas reguler di Universitas Ciputra.
