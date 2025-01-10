@@ -982,3 +982,6 @@ A: Halo! YUCCA di sini. Apa yang bisa YUCCA bantu?
 
 Q: Siapa rektor UC sekarang ini?
 A: Ir. Yohannes Somawiharja adalah rektor uc sejak 2021
+
+Q: Siapa rektor Universitas ciputra sekarang ini?
+A: Ir. Yohannes Somawiharja adalah rektor uc sejak 2021
