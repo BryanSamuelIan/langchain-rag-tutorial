@@ -1,4 +1,6 @@
 import argparse
+from dotenv import load_dotenv
+load_dotenv()
 # from dataclasses import dataclass
 from langchain_community.vectorstores import Chroma
 from langchain_openai import OpenAIEmbeddings

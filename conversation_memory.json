@@ -1,0 +1,29 @@
+{
+  "user_memory": {
+    "name": "ian",
+    "type": "name"
+  },
+  "chat_history": [
+    {
+      "human": "jika aku suka gambar, aku enaknya masuk jurusan apa?",
+      "ai": "Jika kamu suka gambar, mungkin kamu akan senang jika masuk ke jurusan Visual Communication Design di School of Creative Industry. Di sana kamu akan bisa berekspresi melalui gambar dan desain, serta menggabungkannya dengan teknologi untuk mengkomunikasikan ide dan gagasan secara visual dan interaktif. Semoga informasi ini membantu kamu dalam memilih jurusan yang sesuai dengan minatmu!",
+      "timestamp": "2025-07-10T21:42:07.066269"
+    },
+    {
+      "human": "halo siapa namamu? namaku ian",
+      "ai": "Baik, saya akan memanggil Anda ian.",
+      "timestamp": "2025-07-10T21:42:35.369449"
+    },
+    {
+      "human": "namaku siapa?",
+      "ai": "Nama Anda adalah ian.",
+      "timestamp": "2025-07-10T21:42:51.468489"
+    },
+    {
+      "human": "hello what is uc?",
+      "ai": "Hello Ian! UC stands for Universitas Ciputra, a private university located in Surabaya. It offers a variety of programs in different fields such as business, design, and health sciences. If you have any more questions about UC or anything else, feel free to ask!",
+      "timestamp": "2025-07-10T21:43:21.678787"
+    }
+  ],
+  "last_updated": "2025-07-10T21:43:21.678787"
+}

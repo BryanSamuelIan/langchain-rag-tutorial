@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Call Python API</title>
+</head>
+<body>
+  <h2>Kirim Pertanyaan ke Python</h2>
+  <input type="text" id="queryText" placeholder="Tulis pertanyaan..." />
+  <button onclick="callPython()">Kirim</button>
+
+  <h3>Respon dari Python:</h3>
+  <pre id="responseBox">Menunggu input...</pre>
+
+  <script>
+    async function callPython() {
+      const queryText = document.getElementById("queryText").value;
+      const API_URL = "http://127.0.0.1:8000/ask"; // Ganti dengan URL Python server kamu
+
+      const payload = {
+        query_text: queryText
+      };
+
+      try {
+        const response = await fetch(API_URL, {
+          method: "POST",
+          headers: {
+            "Content-Type": "application/json"
+          },
+          body: JSON.stringify(payload)
+        });
+
+        const data = await response.json();
+        document.getElementById("responseBox").textContent = JSON.stringify(data, null, 2);
+      } catch (error) {
+        document.getElementById("responseBox").textContent = "Terjadi error: " + error;
+      }
+    }
+  </script>
+</body>
+</html>

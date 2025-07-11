@@ -1,0 +1,9 @@
+services:
+  - type: web
+    name: yucca-api
+    env: python
+    buildCommand: pip install -r requirements.txt
+    startCommand: bash start.sh
+    envVars:
+      - key: OPENAI_API_KEY
+        value: sk-xxxxxxxxxxxxxxxxxxxxxxxx
