@@ -1,12 +1,12 @@
 from langchain_community.document_loaders import DirectoryLoader
-from langchain.text_splitter import RecursiveCharacterTextSplitter
-from langchain.schema import Document
-from langchain_openai import OpenAIEmbeddings
+from langchain_text_splitters import RecursiveCharacterTextSplitter
+from langchain_core.documents import Document
 from langchain_community.vectorstores import Chroma
 import openai
 from dotenv import load_dotenv
 import os
 import shutil
+from langchain_openai import OpenAIEmbeddings
 
 # Load environment variables. Assumes that project contains .env file with API keys
 load_dotenv()

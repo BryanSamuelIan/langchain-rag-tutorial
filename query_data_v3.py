@@ -5,8 +5,9 @@ from typing import Optional
 from dotenv import load_dotenv
 
 from langchain_chroma import Chroma
-from langchain_openai import OpenAIEmbeddings, ChatOpenAI
-from langchain.prompts import ChatPromptTemplate
+from langchain_openai import OpenAIEmbeddings
+from langchain_openai import ChatOpenAI
+from langchain_core.prompts import ChatPromptTemplate
 
 import os
 import json
@@ -36,7 +37,7 @@ Recent conversation:
 
 Question: {question}
 
-Answer naturally using the provided context. Only use personal information if directly relevant to the question.
+Answer naturally using the provided context. If you are not confident with the knowledge base given, you should say you cant answer/dont have the answer. Only use personal information if directly relevant to the question.
 """
 
 # FastAPI init
@@ -173,34 +174,53 @@ async def ask_query(payload: QueryInput):
     memory_manager = MultiUserMemoryManager(user_id=payload.user_id)
 
     if payload.debug:
-        return {"debug": memory_manager.get_user_info()}
+        return {
+            "debug": {
+                "user_memory": memory_manager.user_memory,
+                "chat_history": memory_manager.chat_history
+            }
+        }
 
     memory_response = memory_manager.update_user_memory(query_text)
     if memory_response:
         memory_manager.add_to_chat_history(query_text, memory_response)
-        return {"response": memory_response}
+        return {"response": memory_response, "debug": {"type": "memory_update"}}
 
     personal_response = memory_manager.handle_personal_query(query_text)
     if personal_response:
         memory_manager.add_to_chat_history(query_text, personal_response)
-        return {"response": personal_response}
+        return {"response": personal_response, "debug": {"type": "personal_query"}}
 
+    # Vector search
     embedding_function = OpenAIEmbeddings()
     db = Chroma(persist_directory=CHROMA_PATH, embedding_function=embedding_function)
     results = db.similarity_search_with_relevance_scores(query_text, k=3)
 
+    # Format chunks
+    similarity_chunks = [
+        {
+            "content": doc.page_content,
+            "metadata": doc.metadata,
+            "score": score
+        }
+        for doc, score in results
+    ] if results else []
+
     user_memory_text = memory_manager.get_user_memory_text()
     chat_history_text = memory_manager.get_chat_history_text()
 
-    if len(results) == 0 or results[0][1] < 0.7:
+    # Decision
+    if not results or results[0][1] < 0.7:
         greetings = ["hallo", "halo", "hi", "hello", "hey"]
         if query_text.lower() in greetings:
             name = memory_manager.user_memory.get("name")
             response_text = f"Halo {name}! YUCCA di sini. Apa yang bisa YUCCA bantu?" if name else "Halo! YUCCA di sini. Apa yang bisa YUCCA bantu?"
         else:
             response_text = "Maaf, YUCCA tidak tahu jawabannya."
+        response_type = "fallback_response"
+        prompt_used = None
     else:
-        context_text = "\n\n---\n\n".join([doc.page_content for doc, _ in results])
+        context_text = "\n\n---\n\n".join([chunk["content"] for chunk in similarity_chunks])
         prompt_template = ChatPromptTemplate.from_template(PROMPT_TEMPLATE)
         prompt = prompt_template.format(
             context=context_text,
@@ -210,8 +230,22 @@ async def ask_query(payload: QueryInput):
         )
         model = ChatOpenAI()
         response_text = model.predict(prompt)
+        response_type = "llm_response"
+        prompt_used = prompt
 
     memory_manager.add_to_chat_history(query_text, response_text)
-    sources = [doc.metadata.get("source", None) for doc, _ in results]
-    return {"response": response_text, "sources": sources}
+
+    return {
+        "response": response_text,
+        "sources": [chunk.get("metadata", {}).get("source") for chunk in similarity_chunks],
+        "chunks_used": similarity_chunks,
+        "debug": {
+            "query_text": query_text,
+            "user_memory_text": user_memory_text,
+            "chat_history_text": chat_history_text,
+            "type": response_type,
+            "final_prompt": prompt_used
+        }
+    }
+
 
