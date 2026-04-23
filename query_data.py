@@ -23,6 +23,7 @@ Rules:
 - Keep answers concise but informative
 - If user greets, respond warmly as YUCCA
 - If relevant, guide the user (e.g., suggest programs, next steps)
+- Make numbers in natural language spelling (e.g one thousand), not numeral (e.g 1000)
 
 Context:
 {context}
@@ -63,7 +64,7 @@ def query(query_text: str):
     })
 
     # LLM
-    model = ChatOpenAI(model="gpt-5", temperature=0)
+    model = ChatOpenAI(model="gpt-4.1", temperature=0)
     response = model.invoke(prompt)
 
     response_text = response.content
