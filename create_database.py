@@ -8,6 +8,10 @@ import os
 import shutil
 from langchain_openai import OpenAIEmbeddings
 
+import nltk
+nltk.download('punkt_tab')
+nltk.download('averaged_perceptron_tagger_eng')
+
 # Load environment variables. Assumes that project contains .env file with API keys
 load_dotenv()
 #---- Set OpenAI API key
