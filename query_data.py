@@ -37,7 +37,7 @@ def query(query_text: str):
     embedding_function = OpenAIEmbeddings()
     db = Chroma(persist_directory=CHROMA_PATH, embedding_function=embedding_function)
 
-    results = db.similarity_search_with_relevance_scores(query_text, k=3)
+    results = db.similarity_search_with_relevance_scores(query_text, k=5)
 
     # Handle no results
     if not results or results[0][1] < 0.7:
