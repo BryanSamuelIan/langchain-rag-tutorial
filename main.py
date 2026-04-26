@@ -53,4 +53,9 @@ def root():
 @app.post("/ask")
 def ask(payload: QueryInput):
     result = query(payload.query_text)
+
+    if isinstance(result, dict) and "response" in result:
+        result["response"] = result["response"].replace("\n", " ")
+        result["response"] = result["response"].replace("*", "")
+
     return result
