@@ -2,7 +2,7 @@ python-dotenv==1.0.1 # For reading environment variables stored in .env file
 langchain==0.2.2
 langchain-community==0.2.3
 langchain-openai==0.1.20  # For embeddings
-unstructured>=0.18.0 # Document loading
+unstructured[md]>=0.18.0 # Document loading
 # onnxruntime==1.17.1 # chromadb dependency: on Mac use `conda install onnxruntime -c conda-forge`
 # For Windows users, install Microsoft Visual C++ Build Tools first
 # install onnxruntime before installing `chromadb`
@@ -12,6 +12,7 @@ tiktoken==0.7.0  # For embeddings
 fastapi
 uvicorn
 nltk
+
 
 
 # install markdown depenendies with: `pip install "unstructured[md]"` after install the requirements file. Leave this line commented out. 
